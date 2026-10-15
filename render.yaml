@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: malayalam-podcast-reel-studio
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: WHISPER_MODEL
+        value: base
+      - key: MAX_CONCURRENT_JOBS
+        value: "1"
+      - key: MAX_VIDEO_MINUTES
+        value: "240"
+      - key: MAX_UPLOAD_MB
+        value: "90"

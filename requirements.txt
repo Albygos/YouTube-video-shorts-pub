@@ -1,0 +1,6 @@
+fastapi==0.115.12
+uvicorn[standard]==0.34.0
+pydantic==2.11.3
+faster-whisper==1.1.1
+python-multipart==0.0.20
+pytubefix==11.2.0
